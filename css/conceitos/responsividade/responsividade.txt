@@ -1,0 +1,16 @@
+formas de responsividade:
+
+media queries:
+    é algo que colocamos no lugar do seletor
+    @media (max-width: 600px){
+        aplica o css que estiver aqui para telas abaixo ou igual do 600px de largura
+    }
+
+    
+
+css grid:
+ 
+
+css flexbox
+
+frameworks

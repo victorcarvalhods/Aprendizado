@@ -1,0 +1,21 @@
+
+.text-cores{
+    font-weight: normal;
+}
+
+#red{
+    color: red;
+}
+
+#blue{
+    color: blue;
+}
+
+#yellow{
+    color: yellow;
+}
+
+.imgs-cores{
+    height: 200px;
+    width: 200px;
+}

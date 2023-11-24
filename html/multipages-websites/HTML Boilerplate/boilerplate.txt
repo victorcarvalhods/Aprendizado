@@ -1,0 +1,41 @@
+É a estrutura de um código html.
+
+No inicio sempre tem um <!DOCTYPE html>:
+    Diz ao navegador a vesão em que o arquivo foi escrito
+
+o elemento abaixo faz referência ao contêiner que vai abrigar todo elemento feito no html
+(img, h1, p, a,hr, etc).
+<html lang="pt-br">
+
+
+</html>
+
+
+O elemento abaixo vai dentro do html e carrega as informações importantes do site que não serão exibidas
+<head>
+
+
+</head>
+
+
+
+o elemento abaixo é onde gastaremos a maior parte do tempo escrevendo, onde carregará todas as informações que serão exibidas
+
+<body>
+    <h1>Hello</h1>
+</body>
+
+
+
+estrutura completa do boilerplate
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alo</h1>
+</body>
+</html>

@@ -1,0 +1,34 @@
+É possível atribuir diferente estilos á um mesmo elemento
+
+mas o navegador vai priorizar o mais importante.
+
+categorias de importância
+
+Posição:
+    Analisa se a regra está em uma posição acima ou abaixo de outras regras
+
+    li{
+        color: red;
+        color: blue; <<< no final das contas, o azul será aplicado no elemento da lista
+    }
+
+    quanto mais baixo a regra está em um arquivo externo ou interno, mais importante ela é
+
+
+Escificidade
+    Refere-se ao grau de especificidade de um seletor em termos dos elementos aos quais você está aplicando
+    4 li{color:blue} menos específico (seletor de elementos)
+    3 .first-class {color:red;} mais específico que o seletor de elemento
+    2 li[draggable] {color: purple} mais específico que o seletor de class
+    1 #first-id {color: orange;}  o mais específico possível
+
+tipo
+    do mais importante para o menos importante (esquerda pra direita)
+    inline, internal, external
+
+importância
+    é uma palavra chave atribuída aos atributos do css
+    palavra-chave = !important
+
+        color: red;
+        color: blue !important <--- este será exibido 

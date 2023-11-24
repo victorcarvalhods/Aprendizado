@@ -1,0 +1,4 @@
+elemento parágrafo:
+<p> isso é um parágrafo </p>
+
+utilizado para fazer diferentes parágrafos de texto e separadas tags em diferentes parágrafos de texto

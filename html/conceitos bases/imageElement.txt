@@ -1,0 +1,3 @@
+<img src="url"/>
+o atributo src diz onde a imagem está alocada
+img é uma self closing tag ou um elemento vazio.

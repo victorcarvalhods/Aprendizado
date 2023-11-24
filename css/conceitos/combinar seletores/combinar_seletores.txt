@@ -1,0 +1,37 @@
+combinar seletores de elementos para deixar a escolha e aplicação das regras mais especifícas
+
+4 regras:
+
+Group:
+    É aplicado para todos os seletores agrupados
+
+    selector, selector{
+        color: bluevoilet;
+    }
+
+child:
+    usa o sinal de > para selecionar o filho direto de outro selector
+
+    selectorPai > selectorFilho{
+        color: firebrick;
+    }
+
+descendant
+    aplica a regra para o descendente que contém o seletorAncestral
+    seletorAncestral selectorDescendente {
+        atributo: valor;
+    }
+
+
+Chaining
+    Aplica o estilo para todos os seletores que existem de verdade
+
+    selectorselector{
+        atributo:valor;
+    }
+
+    ex: Buscar um elemento que tem tal id e tal classe
+
+    h1#title.big.heading{
+        color: seagren;
+    }

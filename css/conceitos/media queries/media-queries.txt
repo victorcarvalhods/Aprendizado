@@ -1,0 +1,25 @@
+funciona basicamente como breakpoints para alterar os estilos baseado na largura disponível
+
+ex
+
+@media (max-width: 600){ o @media é obrigatório. 
+basicamente diz que se tiver largura <= que 600px, deve usar o estilo que está dentro dos {}
+    h1{
+        font-size:15px
+    }
+}
+
+pode-se usar o min-width para ir para o lado oposto:
+    Bsicamente tudo que for >= min-width vai ter aquele estilo
+
+é possível combinar-lós para obter algo como
+
+@media (min-width: 600px) and (max-width: 900px){
+    css para telas que tem entre 600 e 900px
+}
+
+pode-se usar uma palavra chave para alterar o layout da página:
+
+@media print(....){
+    a página terá este css quando estiver sendo imprimida
+}

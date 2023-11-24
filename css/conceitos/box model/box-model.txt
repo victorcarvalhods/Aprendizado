@@ -1,0 +1,74 @@
+height: define a altura do elemento naquela página
+    height: valor;
+    sendo que o valor pode ser um número em pixels ou uma %
+    height:300px; <---- este elemento terá 300 pixels de altura
+    height:50%; <----- este elemento ocupará 50% da altura da tela
+
+width: define a largura do elemento naquela página
+    width: valor;
+    sendo que o valor pode ser um número em pixels ou uma %
+    width:300px; <---- este elemento terá 300 pixels de largura
+    width:50%; <----- este elemento ocupará 50% da largura da tela
+
+border: atribui uma borda ao elemento
+    border: espessura estilo cor;
+    espessura define a grossura da borda (10px,20px,30px)
+    estilo define o estilo da borda (solid)
+    cor define a cor da borda (black, blue, etc)
+
+    não altera o height ou width do elemento.
+
+    é possível customizar as bordas após definir elas. ex:
+        border: 30px solid black;
+            border-top: 0px;
+    no exemplo acima, colocamos uma borda de 30px ao redor do elemento, porém zeramos a espessura da borda no topo;
+    
+    é possível alterar todos os lados da borda em um só atributo:
+    border-width: top right bottom left;
+    ex:
+        border-width: 0px 10px 20px 30px;
+
+    o atributo acima também aceita apenas dois valores. porém ele agrupara as bordas em pares
+    border-widht: top+bottom left+right;
+    ex:
+        border-widht: 0px 20px; cima e embaixo terão 0px, equanto a esquerda e a direita terão 20px
+    
+
+
+margin: parte que está fora da fronteira, ou seja, externo a borda do elemento
+    basicamente aumenta a distância em todas as direções entre a borda do elemento e todo o conteúdo ao redor dele
+    
+    margin:valor; sendo o valor em pixels
+    margin:20px; a distância entre o fim da borda do elemento e os outros conteúdos aumentou em 20px;
+
+    é possível alterar todos os lados da margem em um só atributo:
+    margin-width: top right bottom left;
+    ex:
+        margin-width: 0px 10px 20px 30px;
+
+    o atributo acima também aceita apenas dois valores. porém ele agrupara as margens em pares
+    margin-widht: top+bottom left+right;
+    ex:
+        margin-widht: 0px 20px; cima e embaixo terão 0px, equanto a esquerda e a direita terão 20px
+
+Padding: aumenta a distância entre a borda do elemento e o elemento
+    padding: valor; sendo o valor em pixels
+    padding: 20px; a distância entre o elemento e a sua borda será de 20px;
+    assim como na borda, o padding n aumenta o tamanho e largura do elemento, apenas adiciona na parte externa dele
+
+    é possível alterar todos os lados do padding em um só atributo:
+    padding-width: top right bottom left;
+    ex:
+        padding-width: 0px 10px 20px 30px;
+
+    o atributo acima também aceita apenas dois valores. porém ele agrupara as paddings em pares
+    padding-widht: top+bottom left+right;
+    ex:
+        padding-widht: 0px 20px; cima e embaixo terão 0px, equanto a esquerda e a direita terão 20px
+
+
+Content division element:
+    Agrupa elementos em caixas para estilar-lôs juntos
+
+    <div>conteúdo</div> podemos por quantos elementos quisermos dentro das divs
+

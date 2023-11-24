@@ -1,0 +1,89 @@
+variáveis:
+    keywords: var, let, const
+
+
+text.lenght;
+
+text.slice(x,y);
+
+++ -- += -= *= /=
+
+
+
+
+function nome(parametros){
+
+}
+
+
+if (condição){
+
+}
+else{
+
+}
+
+ternário:
+    condition ? expr1 : expr2
+
+
+== igual mas verifica se o valor é igual
+=== igual mas verifica se os tipos de dados são iguais
+!= diferente
+>
+<
+>=
+<=
+&& and
+|| or
+! not
+
+
+collections:
+
+    arrays:
+        definição var nome_var = [];
+
+        .includes(objeto) true or false para saber se o objetio existe ou não no array
+
+        .push(objeto) adiciona o valor no final do array
+
+        .pop retira o último objeto do array
+
+while(condição){
+    código;
+}
+
+for (var; condição; incremento){
+    código;
+}
+
+dom: Document Object Model
+    cataloga a pagina web em objetos inviduais que permite alterações
+
+    conversão de html para dom é feito pelo navegador
+
+    usa árvores para mapear o html.
+
+    document:
+        .firstElementChild
+        .innerHTML (altera o valor de um elemento)
+        .style.atributo (altera os atributos de css)
+        document.querySelector("seletor") seleciona o elemento que tiver o seletor descrito entre os parenteses e aspas.
+        .click() executa a ação de click no elemento
+        .appendChild() adiciona mais um filho para aquele elemento
+
+        document.getElementsByTagName("tag") seleciona todos os elementos que tem aquela tag em especifico dentro de um array
+            diferente do querySelector
+
+        document.getElementsByClassName("classe) seleciona todos os elementos que tem aquela classe em especifico dentro de um array
+
+        document.getElementById("id") seleciona o elemento que tem aquele id em específico.
+            **Só usar um id por elemento**
+
+        document.querySelector(selector) o selector é o mesmo utilizado para selecionar um elemento nos documentos de html.
+
+        document.querySelectorAll(selector) o selector é o mesmo utilizado para selecionar todos elementos com aquele selector no documento de html.
+
+        .style.atributo = novo valor; no lugar de - usa-se camelCase
+            o valor deve ser string.

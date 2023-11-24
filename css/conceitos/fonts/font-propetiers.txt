@@ -1,0 +1,70 @@
+font size:
+
+    Altera o tamanhoo de uma font de texto
+
+    ex:
+    font-size: Ypx; <<<< seta o tamanho da fonte para Y pixels
+
+    1 pixel é 0.26mm x 0.26mm
+
+
+    podde-se usar Ypt também para difinir o tamanho de uma font
+
+    font-size: Ypt; 1pt = 0.35mm x 0.35mm
+
+    pt > px.
+
+    Google docs e world usam pt para difinir o tamanho da fonte do texto
+
+    em e rem:
+
+    é um multiplicador aplicado ao tamanho da fonte.
+
+    em: altera o tamanho da fonte baseado nos pixels do seu elemento pai.
+    ex:
+
+    <footer font-size:20px>
+        <h2 font-size:"2em">asdasd</h2> <!---- o h2 terá 40 px (2x20px)
+    </footer>
+
+    porém p rem é o multiplicador que leva em consideração o tamanho da fonte do elemento raiz= html
+
+    ex:
+
+    <html font-size:40px>
+        <footer font-size:20px>
+            <h2 font-size:"2rem">asdasd</h2> <!---- o h2 terá 80px (2x40px)
+        </footer>
+    </html>
+
+    recomenável sempre usar o rem.
+
+
+font Weight:
+    font-weight: valor; o valor pode ser normal ou bold, que faz a fonte parecer mais pesada
+
+    lighter (o peso do elemento pai -100) 
+    bolder (o peso do elemento pai +100)
+
+    número: 100-900 (mais leve- mais pesado)
+
+
+font family: determina como queremos que o texto seja
+    font-family: typeface, tipo de fonte genérico
+    ex:
+    font-family: Helvetica(typeface do mac, não funciona no windows), sans-serif
+    no exemplo, usuários de mac irão ver a primeira fonte, enquanto usuários windows verão a segunda fonte
+
+    sans-serif: tipo de fonte onde todas as boras estão em ângulos retos
+
+    fontes com nomes compostos separados por espaço, escrevemos ela entre aspas
+
+    font-family: "Times New Roman", serif
+
+    fonts.google.com para encontrar fontes
+
+text align: permite centralizar onde preferir
+    text-align: value; 
+    exemplo de valores (left, right, center, start, end)
+
+    

@@ -1,0 +1,19 @@
+Lista não ordenada <ul></ul>
+este elemento n funciona sozinho
+é preciso os itens da listas, dado pelo elemento <li></li>
+
+ex:
+
+<ul>
+    <li>asdasdgg</li>
+    <li>asdasdasdasd</li>
+    <li>asdasdasd</li>
+</ul>
+
+lista odenada <ol></ol>
+
+<ol>
+    <li>asdasdgg</li>
+    <li>asdasdasdasd</li>
+    <li>asdasdasd</li>
+</ol>

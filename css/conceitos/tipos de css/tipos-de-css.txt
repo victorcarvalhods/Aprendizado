@@ -1,0 +1,40 @@
+Existem vários tipos de css:
+inline
+external
+internal
+
+inline: atingir 1 elemento
+Ele vai dentro da tag do elemento ex: <html style="background: blue">
+É útil para adicionar estilo para apenas um elemento da página.
+Mas é complicado conforme a quantidade e elementos aumenta.
+
+
+internal: atingir 1 página
+É feito pela tag <style></style>
+Entre as tags, é onded adicionamos o nosso css
+ex:
+
+<head>
+    <style>
+        html{
+            background:red;
+        }
+    </style>
+</head>
+
+Este tipo é útil pois podemos adicionar mais estilos a um elemento, diferente do inline
+basta adicionarmos o selector.
+
+Mas o internal só se aplica para aquele documento HTML, não pode ser utilizado em outros documentos.
+
+
+external:atingi muitas páginas
+existe em um arquivo separado, na extensão css.
+
+como linkar o css dentro do html:
+
+dentro do head, basta adicionar uma link tag assim
+
+<link rel="stylesheet"
+    href="caminha do arquivo"
+/>

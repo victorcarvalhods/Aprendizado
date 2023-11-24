@@ -1,0 +1,20 @@
+heading: cabeçalho
+
+<tags> vs elementos:
+tags é tudo que fica dentro dos simbolos <>
+Ex: <h1> <h2>, etc
+elemento é a tag e o seu conteúdo
+ex: <h1> texto </h1>
+
+opening and closing tags:
+abertura: <h1>{content}
+fechamento: </h1>
+
+
+headings vão de <h1>-<h6>
+
+Quanto maior o número do heading, menor será o seu tamanho(importância no texto)
+
+
+Boa prática é só ter um H1 na página html.
+Não pular níveis, ir sempre na ordem h1-> h2->h3 etc.

@@ -1,0 +1,86 @@
+
+.main {
+    position: relative;
+    left: 5%;
+    top: 20px;
+}
+img{
+    margin-right: 20px;
+}
+
+.left img {
+    height: 200px;
+    float: left;
+}
+
+.right img {
+    clear: both;
+    height: 200px;
+    float: left;
+}
+
+
+.right{
+    display: block;
+    clear: left;
+    display: inline-block;
+    width: 35%;
+    height: 20%;
+    margin-left: 200px;
+    position: relative;
+    top: 22px;
+}
+
+.left{
+    display: inline-block;
+    width: 35%;
+}
+
+h1,h2,p{
+    font-family: Poppins;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+span{
+    color: purple;
+    display: inline-block;
+    
+}
+
+footer{
+    clear: both;
+    position: relative;
+    text-align: end;
+    margin-top: 20%;
+    color: purple;
+}
+
+
+@media (max-width: 680px) {
+    .logo {
+      width: 100px;
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  
+    .card {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+  
+    .card img {
+      margin-bottom: 10px;
+      width: 100%;
+      display: inline;
+      object-fit: cover;
+    }
+  }
+  

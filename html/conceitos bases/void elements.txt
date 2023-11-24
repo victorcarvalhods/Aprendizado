@@ -1,0 +1,15 @@
+elementos vazios são elemento que não se pode colocar conteúdo dentro da tag
+
+ex: horizontal rule <hr />
+<hr /> cria uma linha horizontal entre os conteúdos
+
+
+Break elemento
+<br />
+Faz quebras de linhas dentro do texto
+
+
+Não usar <br /> para separar parágrafos, somente textos ddentro de um mesmo parágrafo
+
+não obrigatório usar a / dentro dos elementos
+<hr> <br> etc.

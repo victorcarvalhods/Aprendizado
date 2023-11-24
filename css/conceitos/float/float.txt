@@ -1,0 +1,7 @@
+utilizamos o float para fazer o texto contornar um elemento
+
+ex: um texto fazer o contorno em uma imagem
+
+float:left; <---- o texto vai contornar a esquerda
+
+float:right; o texto vai contornar a direita

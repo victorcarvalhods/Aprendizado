@@ -1,0 +1,70 @@
+Tipos ded seletores:
+
+tag selector:
+h2{
+    estilo aqui
+}
+
+ele basicamente pegará todos os elementos h2 e aplicará aquele estilo para ele
+
+class selector
+
+.red-heading{
+    estilo
+}
+
+uma class é uma forma de agrupar elementos em uma mesma família de elemento
+
+ex
+
+<h2 class="red-text"> red </h2>
+
+Agora esse h2 pertence a familia dos "red-text" e todo estilo aplicado para está familia, também se aplicará à ele
+
+
+ex de elementos de tipos diferentes, mas classes iguais
+
+    <h2 class="red-text">Vermelho</h2>
+    <p class="red-text">Vermelho</p>
+
+id selector:
+tem um símbolo próprio: #
+#main{
+    color:red
+}
+o css acima seleciona todos os elementos com id main e aplica o estilo á ele
+
+
+
+
+ID vs CLASS:
+
+class se aplica a muitoos elementos, 
+enquanto o id deve ser aplicado apenas a um elementoo em um único arquivo
+
+
+Attribute selector:
+elemento[atributo]{
+    estilo
+}
+
+aplica o estilo para o estilo para todos os elementos iguais que contém aquele atributo em especifico
+
+p[draggable]{
+    color: red;
+}
+^^^^ seleciona todos os paragráfos que contém o atributo draggable e aplica a cor Vermelha neles
+
+é possível selecionar também o valor do atributo, ex=
+
+p[draggable="false"]{
+    color: cyan;
+}
+
+
+Universal Selector
+Seleciona tudo onde o css está ativo
+
+*{
+    estilo
+}

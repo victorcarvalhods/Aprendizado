@@ -1,0 +1,117 @@
+dentro da div container, utilizar o atributo
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+display: flex;
+
+variações do valor
+    inline-flex
+    box-flex
+
+
+a direção padrão do display é de cima para baixo.
+
+preenchendo linha por linha
+
+flex-direction:row (padrão)
+    o eixo principal fica assim:
+        main-axis
+        ---------------|----> da esquerda para a direita
+                        |
+                        |
+                        | 
+                        | Cross-axis: perpendicular ao eixo principal
+                        |
+                        |
+                        \/
+
+flex-direction: column:
+    Faz os elementos serem exibidos de cima para baixo
+
+    os eixos ficam assim:
+
+        |
+        |
+        |
+      -----------------> cross-axis  
+        |
+        |
+        |
+        | main-axis
+        \/
+
+
+flex-basis: valor; sendo o valor em pixels. ****DEVE IR NO FILHO DA DIV QUE CONTÉM O DISPLAY:flex******
+    flex-basis: 100px
+    expandirá o elementos no eixo principal para satisfazer a condição de 100px
+
+    se o flex-direction for row:
+        estaremos alterando a largura dos elementos dentro do flex-box
+
+    se o flex-direction for column:
+        estaremos alterando a altura dos elementos dentro do flex-box
+
+
+
+layouts:
+    order: vai no filho do flexbox
+        order:valor; 
+        você basicamente da um valor para os filhos do flexbox
+        o valor altera a sua ordem de exibição
+        valor = 0 usa a ordem padrão do html. o que está definido primeiro, vem primeiro;
+        valor > 0 vai mover o item de acordo com o seu valor e o valor dos outros irmãos
+        quanto maior o valor do order, mais para o final da flexbox ele tende a ficar
+
+    flex-wrap: vai no container flexbox
+        flex-wrap: valor;
+        nowrap; valor padrão, os itens vão ser amontoados na flexbox
+        wrap; caso um elemento não caiba, ele será jogado para a linha abaixo
+        wrap-reverse; os elementos serão exibidos de baixo para cima no lugar cima para baixo na div
+
+    justify-content: container pai // Essa propriedade é usada para alinhar os itens horizontalmente ao longo do eixo principal do container.
+        obs: essa propriedade só funciona se ainda tiver espaço dentro do container, se os elementos ocupam todo o espaço, nada acontecerá
+        altera a distribuição dos itens no eixo principal
+        flex-start; todos os itens serão colocados na esquerda do container
+        flex-end; todos os itens serão colocados na direita do container
+        center; todos os itens serão colocados no centro do container
+        space-between; cria espaço entre os elementos para distribuir-lós de modo a ocupar todo o espaço disponível
+        space-around; cria um espaço no inicio e no fim para ser adicionado no processo de ocupar todo o espaço disponível
+        space-evenly; faz com que todos os espaços sejam iguais
+    
+    align-items: container pai // Essa propriedade é usada para alinhar os itens verticalmente ao longo do eixo transversal do container
+        diferente do justify-content
+        enquanto o justify altera a distribuição no eixo principal, o align items altera a distribuição no eixo perpendicular
+        para que o align-items funcione, precisamos setar a altura do container
+            height: valor;
+            height:70vh;
+            vh: altura da janela que estamos vendo a página
+        
+        flex-start; alinha os itens no topo do container
+        flex-end; alinha os itens no fim do container
+        center; alinha os itens no meio do container
+
+    align-self: container filho // Ela permite que você controle o alinhamento vertical de um item individualmente
+        funciona parecido com o align-items, mas ele é utilizado para alterar um só elemento do container
+        compartilha os atributos do pai;
+
+    align-content: container pai // Essa propriedade é usada quando há mais de uma linha de itens no container Flexbox. Ela define como as linhas de itens são distribuídas ao longo do eixo transversal do container.
+        funciona parecido com o align-items, mas só funciona quando termpos flex-wrap: wrap;
+        precisamos também setar a altura
+
+
+Flex Sizing:
+    flex-grow: valor; determina a capacidade de crescer dos conteúdos dentro do container
+        valor = 0: não permite o crescimento dos elementos
+        valor = 1: permite o crescimento dos elementos o máximo possível
+    flex-shrink: valor; determina a capacidade de encolher dos conteúdos dentro do container
+        valor = 0: não permite o encolhimento dos elementos
+        valor = 1: permite o encolhimento dos elementos o máximo possível
+
+    valor padrão do grow e shrink:
+        flex-grow: 0;
+        flex-shrink: 1;
+            basicamente dis que os elementos não vão crescer além do tamanho definido, mas eles irão encolher abaixo do tamanho definido
+
+    
+    flex: grow shrink basis;
+
+    flex: 1; grow = 1, shrink =1, basis = 0;
+    basis = 0; diz que os elementos terão o mesmo tamanho

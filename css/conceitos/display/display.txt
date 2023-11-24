@@ -1,0 +1,34 @@
+<span></span> utilizado dentro de outros elementos
+
+tem um valor de display diferente dos demais
+
+tipos de display:
+
+o valor padrão é block
+
+display:block;
+
+block:
+quando utilizamos o paramêtro block, o elemento vai pegar toda a largura da página
+
+inline:
+    Não é possível definir a altura e largura do elemento, o seu tamanho vai ocupar somente o necessário para exibir os valores
+     Considerando que tenhamos dois h2 e queremos que eles sejam exibidos em uma linha só
+
+     podemos utilizar display:inline para fazer isso
+
+     <h2>1</h2>
+     <h2>2</h2>
+
+     h2{
+        display:inline;
+     }
+
+inline-block:
+    diferente do inline que não podemos alterar suas propriedades de tamanho, podemos setar altura e largura do elemento
+    Mas, ele ainda preserva a propriedade de poder ter mais de um elemento em uma mesma linha.
+
+
+none:
+    faz todo elemento desaparecer
+

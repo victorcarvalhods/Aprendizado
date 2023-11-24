@@ -1,0 +1,37 @@
+O que é?:
+    framework externo de css que contém css pré feito.
+    layout de 12 colunas.
+
+vantagens:
+    fácil, rapido de usar e com vários componentes pré-construídos
+    style consistente
+    suporte em todos os navegadores
+
+desvantagens:
+    css escrito em line nos elementos
+    falta de controle com relação a página.
+
+quando usar e quando não usar:
+    sites simples ou muito simples não é recomendado utilizar
+
+
+como usar:
+    basta utilizar o link.
+
+
+
+layout:
+    sistema de 12 componentes, composto por três elementos
+        div container
+            div row
+                div col
+    
+    o framework tenta por todos os elementos em uma linha unica e vai ter auto fit e eles serão responsivos.
+
+    tamanho de colunas:
+        no lugar de escrever apenas "col", podemos escrever "col-x" (sendo x um valor de 1 a 12), onde o valor representará o tamanho do item na linha
+        basicamente diz quantas das 12 colunas o seu elemento ocupará.
+
+components:
+    
+    

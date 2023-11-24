@@ -1,0 +1,19 @@
+O elemento âncora permite criar hiperlinks
+
+<a> isso é um link </a>
+
+^^ desta forma acima, ele n funciona, precisamos adicionar um atributo na tag de abertura
+
+assim
+<a href="link"> conteúdo </a>
+
+href: A URL para a qual o hiperlink aponta.
+
+atributor html
+
+<tag attribute=value> content </tag>
+
+podem ter quantos atributos o elemento permitir
+<tag attribute=value outroattribute=value> content </tag>
+
+

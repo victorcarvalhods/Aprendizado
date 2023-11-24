@@ -1,0 +1,29 @@
+html{
+    font-size: 30px;
+}
+
+body{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 18px;
+}
+
+#cor{
+    color: coral;
+}
+
+#fs{
+    font-size: 2rem;
+}
+
+#fw{
+    font-weight: 900;
+}
+
+#ff{
+    font-family: 'Caveat', cursive;
+}
+
+#ta{
+    text-align: right;
+}

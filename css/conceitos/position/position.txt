@@ -1,0 +1,43 @@
+tipos de posicionamento: https://appbrewery.github.io/css-positioning/
+
+
+estático: padrão do html
+    os itens fluem como fluiriam no html
+    position: static;
+    ex:
+
+    <div>
+        p
+        h1
+    </div>
+
+    a posição do h1 vai ser abaixo do paragráfo
+    então se adicionarmos uma imagem, ela virá abaixo do h1
+
+
+relativo: A posição do elemento é relativa a sua posição padrão
+    você basicamente pega o elemento e move ele com base na posição onde ele deveria estar
+    position: relative;
+
+    ex código:
+        position: relative;
+        left: 50px;
+        top: 50px;
+    o elemento se encontrará 5a pixeis a esquerda e 50 pixeis abaixo da sua posição esperada
+
+absoluto: Posição é relativa a posição do ancestral mais próximo ou canto esquerdo superior da página web
+    se quisermos que o elemento esteja posicionado em relação ao ancestral
+    o ancestral deve ter o position:relative ativo.
+
+z-index:
+    determina qual elemento fará sobreposição a outro
+
+    z-index: valor; quanto maior o valor, mais sobreposição sobre os elementos ele terá
+
+    todo elemento tem um z-index padrão de 0
+
+fixo: Posição relativa ao canto esquerdo superior da janela do navegador
+    position: fixed;
+
+    basicamente se rolarmos a página, o elemento ainda continuará no mesmo lugar
+
